@@ -27,11 +27,12 @@ done
 mv $SOURCE $SOURCE_TMP
 
 jazzy \
+    --theme ~/Developer/Apple/Jony/Source \
 	--objc \
 	--clean \
 	--author 'Instagram' \
     --author_url 'https://twitter.com/fbOpenSource' \
-    --github_url 'https://github.com/Instagram/IGListKit' \
+    --github_url 'https://github.com/HarshilShah/IGListKit' \
     --sdk iphonesimulator \
     --module 'IGListKit' \
     --framework-root . \
