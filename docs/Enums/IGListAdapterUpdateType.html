@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>IGListGenericSectionController Class Reference</title>
+    <title>IGListAdapterUpdateType Enumeration Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
 	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0" />
@@ -11,8 +11,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/objc/Class/IGListGenericSectionController" class="dashAnchor"></a>
-    <a title="IGListGenericSectionController Class Reference"></a>
+    <a name="//apple_ref/objc/Enum/IGListAdapterUpdateType" class="dashAnchor"></a>
+    <a title="IGListAdapterUpdateType Enumeration Reference"></a>
     <header>
       <div class="content-wrapper">
         <p>
@@ -36,7 +36,7 @@
             <a href="../index.html">IGListKit Reference</a>
             <img id="carat" src="../img/carat.png" />
           </span>
-          IGListGenericSectionController Class Reference
+          IGListAdapterUpdateType Enumeration Reference
         </p>
       </div>
     </div>
@@ -45,16 +45,14 @@
         <article class="main-content">
           <section>
             <section class="section">
-              <h1>IGListGenericSectionController</h1>
+              <h1>IGListAdapterUpdateType</h1>
                 <div class="declaration">
                   <div class="language">
-                    <pre class="highlight"><code>
-<span class="k">@interface</span> <span class="nc">IGListGenericSectionController</span> <span class="o">&lt;</span><span class="n">__covariant</span> <span class="n">ObjectType</span><span class="o">&gt;</span> <span class="o">:</span> <span class="n"><a href="../Classes/IGListSectionController.html">IGListSectionController</a></span></code></pre>
+                    <pre class="highlight"><code><span class="k">enum</span> <span class="n">IGListAdapterUpdateType</span> <span class="p">{}</span></code></pre>
 
                   </div>
                 </div>
-              <p>This class adds a helper layer to <code>IGListSectionController</code> to automatically store a generic object in
-<code>didUpdateToObject:</code>.</p>
+              <p>The type of update that was performed by an <code><a href="../Classes/IGListAdapter.html">IGListAdapter</a></code>.</p>
 
             </section>
             <section class="section task-group-section">
@@ -63,9 +61,9 @@
                   <li class="item">
                     <div>
                       <code>
-                      <a name="/c:objc(cs)IGListGenericSectionController(py)object"></a>
-                      <a name="//apple_ref/objc/Property/object" class="dashAnchor"></a>
-                      <a class="token" href="#/c:objc(cs)IGListGenericSectionController(py)object">object</a>
+                      <a name="/c:@E@IGListAdapterUpdateType@IGListAdapterUpdateTypePerformUpdates"></a>
+                      <a name="//apple_ref/objc/Case/IGListAdapterUpdateTypePerformUpdates" class="dashAnchor"></a>
+                      <a class="token" href="#/c:@E@IGListAdapterUpdateType@IGListAdapterUpdateTypePerformUpdates">IGListAdapterUpdateTypePerformUpdates</a>
                       </code>
                     </div>
                     <div class="height-container">
@@ -73,27 +71,19 @@
                       <section class="section">
                         <div class="pointer"></div>
                         <div class="abstract">
-                          <p>The object mapped to this section controller. Matches the object provided in
-<code>[IGListAdapterDataSource listAdapter:sectionControllerForObject:]</code> when this section controller was created and
-returned.</p>
-<div class="aside aside-note">
-    <p class="aside-title">Note</p>
-    This object is briefly <code>nil</code> between initialization and the first call to <code>didUpdateToObject:</code>. After that, it is
-safe to assume that this is non-<code>nil</code>.
-
-</div>
+                          <p><code><a href="../Classes/IGListAdapter.html#/c:objc(cs)IGListAdapter(im)performUpdatesAnimated:completion:">-[IGListAdapter performUpdatesAnimated:completion:]</a></code> was executed.</p>
 
                         </div>
                         <div class="declaration">
                           <h4>Declaration</h4>
                           <div class="language">
                             <p class="aside-title">Objective-C</p>
-                            <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">ObjectType</span> <span class="n">object</span><span class="p">;</span></code></pre>
+                            <pre class="highlight"><code><span class="n">IGListAdapterUpdateTypePerformUpdates</span></code></pre>
 
                           </div>
                           <div class="language">
                             <p class="aside-title">Swift</p>
-                            <pre class="highlight"><code><span class="k">var</span> <span class="nv">object</span><span class="p">:</span> <span class="kt">ObjectType</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                            <pre class="highlight"><code><span class="k">case</span> <span class="n">performUpdates</span> <span class="o">=</span> <span class="mi">0</span></code></pre>
 
                           </div>
                         </div>
@@ -103,9 +93,9 @@ safe to assume that this is non-<code>nil</code>.
                   <li class="item">
                     <div>
                       <code>
-                      <a name="/c:objc(cs)IGListGenericSectionController(im)didUpdateToObject:"></a>
-                      <a name="//apple_ref/objc/Method/-didUpdateToObject:" class="dashAnchor"></a>
-                      <a class="token" href="#/c:objc(cs)IGListGenericSectionController(im)didUpdateToObject:">-didUpdateToObject:</a>
+                      <a name="/c:@E@IGListAdapterUpdateType@IGListAdapterUpdateTypeReloadData"></a>
+                      <a name="//apple_ref/objc/Case/IGListAdapterUpdateTypeReloadData" class="dashAnchor"></a>
+                      <a class="token" href="#/c:@E@IGListAdapterUpdateType@IGListAdapterUpdateTypeReloadData">IGListAdapterUpdateTypeReloadData</a>
                       </code>
                     </div>
                     <div class="height-container">
@@ -113,45 +103,53 @@ safe to assume that this is non-<code>nil</code>.
                       <section class="section">
                         <div class="pointer"></div>
                         <div class="abstract">
-                          <p>Updates the section controller to a new object.</p>
-<div class="aside aside-note">
-    <p class="aside-title">Note</p>
-    <p>This <code><a href="../Classes/IGListSectionController.html">IGListSectionController</a></code> subclass sets its object in this method, so any overrides <strong>must call super</strong>.</p>
-
-</div>
+                          <p><code><a href="../Classes/IGListAdapter.html#/c:objc(cs)IGListAdapter(im)reloadDataWithCompletion:">-[IGListAdapter reloadDataWithCompletion:]</a></code> was executed.</p>
 
                         </div>
                         <div class="declaration">
                           <h4>Declaration</h4>
                           <div class="language">
                             <p class="aside-title">Objective-C</p>
-                            <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didUpdateToObject</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">id</span><span class="p">)</span><span class="nv">object</span><span class="p">;</span></code></pre>
+                            <pre class="highlight"><code><span class="n">IGListAdapterUpdateTypeReloadData</span></code></pre>
 
                           </div>
                           <div class="language">
                             <p class="aside-title">Swift</p>
-                            <pre class="highlight"><code><span class="kd">func</span> <span class="nf">didUpdate</span><span class="p">(</span><span class="n">to</span> <span class="nv">object</span><span class="p">:</span> <span class="kt">Any</span><span class="p">)</span></code></pre>
+                            <pre class="highlight"><code><span class="k">case</span> <span class="n">reloadData</span> <span class="o">=</span> <span class="mi">1</span></code></pre>
 
                           </div>
                         </div>
-                        <div>
-                          <h4>Parameters</h4>
-                          <table class="graybox">
-                            <tbody>
-                              <tr>
-                                <td>
-                                  <code>
-                                  <em>object</em>
-                                  </code>
-                                </td>
-                                <td>
-                                  <div>
-                                    <p>The object mapped to this section controller.</p>
-                                  </div>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/c:@E@IGListAdapterUpdateType@IGListAdapterUpdateTypeItemUpdates"></a>
+                      <a name="//apple_ref/objc/Case/IGListAdapterUpdateTypeItemUpdates" class="dashAnchor"></a>
+                      <a class="token" href="#/c:@E@IGListAdapterUpdateType@IGListAdapterUpdateTypeItemUpdates">IGListAdapterUpdateTypeItemUpdates</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p><code><a href="../Protocols/IGListCollectionContext.html#/c:objc(pl)IGListCollectionContext(im)performBatchAnimated:updates:completion:">-[IGListCollectionContext performBatchAnimated:updates:completion:]</a></code> was executed by an <code><a href="../Classes/IGListSectionController.html">IGListSectionController</a></code>.</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Objective-C</p>
+                            <pre class="highlight"><code><span class="n">IGListAdapterUpdateTypeItemUpdates</span></code></pre>
+
+                          </div>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight"><code><span class="k">case</span> <span class="n">itemUpdates</span> <span class="o">=</span> <span class="mi">2</span></code></pre>
+
+                          </div>
                         </div>
                       </section>
                     </div>
